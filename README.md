@@ -18,7 +18,7 @@ We have created a mini test set (100 samples) for QuickDraw dataset. Refer to [g
 We have created a special file [final_test.py](final_test.py) for this mini test set. You can evaluate all of our models on the mini test set using this file. For training, evaluating, or transfer learning on different datasets and different settings, please refer to [main.py](main.py) and [core.py](core.py).
 
 ## Instructions
-Please refer to the notebooks listed below. Simply run each notebook, final result as well as intermediate results will be found.
+Please refer to the notebooks listed below. Each notebook shows the final result as well as intermediate results.
 ### 1. Preprocessing
 [EDA_and_Preprocessing.ipynb](EDA_and_Preprocessing.ipynb)
 ### 2. Models
