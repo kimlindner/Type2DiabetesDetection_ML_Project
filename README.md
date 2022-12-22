@@ -5,17 +5,16 @@ More than 500 million people worldwide suffer from type 2 diabetes and even more
 Following, the aim of this work is to investigate the performance of different machine learning models for the prediction of type 2 diabetes based on given risk factors. Since missing a diagnosis of type 2 diabetes in early stages can have life-threatening consequences, our secondary goal will be to minimize the number of false negatives in our models.
 ## Installation
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-
-pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
-
+conda create --name my_env
+conda activate my_env
+conda install pip
 pip install -r requirements.txt
 ```
-
-We have created a mini test set (100 samples) for QuickDraw dataset. Refer to [generating_100_test_data.ipynb](generating_100_test_data.ipynb) for further detail on how we extract these 100 samples.
-
-We have created a special file [final_test.py](final_test.py) for this mini test set. You can evaluate all of our models on the mini test set using this file. For training, evaluating, or transfer learning on different datasets and different settings, please refer to [main.py](main.py) and [core.py](core.py).
+Set the conda environment on jupyter notebook
+```bash
+conda install -c anaconda ipykernel
+python -m ipykernel install --user --name=my_env
+```
 
 ## Instructions
 Please refer to the notebooks listed below. Each notebook shows the final result as well as intermediate results.
